@@ -14,11 +14,20 @@ delete      |   -   | == 0, 0 -> 1
 
 ##### save
 * deleted(1) -> no calls
-* saved(0) -> api call to save
+* saved(0) -> api call to save -> set saved to 1
 * saved(1) -> no api call may throw error
 
 ##### update
 * deleted(1) -> no calls
 * saved(0) -> no api call may throw error
 * saved(1) -> api call to update
-* 
+
+##### replace
+* deleted(1) -> no calls
+* saved(0) -> no api call may throw error
+* saved(1) -> api call to replace
+
+##### delete
+* deleted(1) -> no calls
+* saved(0) -> no api call, set deleted to 1
+* saved(1) -> api call to delete -> set deleted to 1
