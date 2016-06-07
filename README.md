@@ -31,3 +31,11 @@ delete      |   -   | == 0, 0 -> 1
 * deleted(1) -> no calls
 * saved(0) -> no api call, set deleted to 1
 * saved(1) -> api call to delete -> set deleted to 1
+
+
+```es6
+const testCol = new testCollection();
+
+let [doc, headers, status] = await testCol.document('1337');
+await doc.update({updated:});
+```
