@@ -1,5 +1,5 @@
 # orango
-poc orm for ArangoDB
+poc orm for ArangoDB in ES7
 
 
 #### document
