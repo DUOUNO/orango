@@ -38,4 +38,14 @@ const testCol = new testCollection();
 
 let [doc, headers, status] = await testCol.document('1337');
 await doc.update({updated:});
+
+let edge = new testEdge(data:{});
+let edge = new testEdge(_fromDoc:{}, _toDoc:{}, data:{});
+edge.save();
+edge.updateFrom(_from:str);
+edge.updateTo(_to:str);
+edge.update(data:{});
+edge.replace(data:{});
+edge.replace(_fromDoc:{}, _toDoc:{}, data:{});
+edge.delete();
 ```
